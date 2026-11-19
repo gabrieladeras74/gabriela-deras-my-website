@@ -16,25 +16,41 @@
 <body>
 
     
-    <!-- HEADER: LOGO AND BUSINESS NAME -->
-    <header class="header">
+  <!-- HEADER: LOGO AND BUSINESS NAME -->
+<header class="header">
+
+    <div class="water-effects">
+        <span class="bubble bubble1"></span>
+        <span class="bubble bubble2"></span>
+        <span class="bubble bubble3"></span>
+        <span class="bubble bubble4"></span>
+        <span class="bubble bubble5"></span>
+        <span class="bubble bubble6"></span>
+        <span class="bubble bubble7"></span>
+        <span class="bubble bubble8"></span>
+    </div>
+
     <img src="logo.png" alt="Gaby's Car Wash">
+
 </header>
 
 
-    <!-- Navigation -->
-    <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="servicespage.html">Services</a>
-        <a href="gallerypage.html">Gallery & Location</a>
-    </nav>
+
+<!-- NAVIGATION MENU -->
+<nav class="navigation">
+    <a href="index.html">Home</a>
+    <a href="servicespage.html">Services</a>
+    <a href="gallerypage.html">Gallery</a>
+    <a href="gallerypage.html#location">Location</a>
+</nav>
+
 
     <main>
 
         <!-- Gallery Section -->
         <section class="gallery-section">
 
-            <h1>Our Gallery ✧</h1>
+            <h1>✧ A Glimpse of the Shine ✧</h1>
 
             <div class="gallery-grid">
 
@@ -63,42 +79,83 @@
                          alt="polishing headlights of a car">
                 </div>
 
+                
                 <div class="gallery-item">
                     <img src="photo 6.jpg"
                          alt="A freshly cleaned car">
                 </div>
 
-            
-<div class="lightbox" id="galleryLightbox">
-    <button class="lightbox-close" id="lightboxClose">&times;</button>
-    <button class="lightbox-prev" id="lightboxPrev">&#10094;</button>
+            </div> <!-- CLOSES gallery-grid -->
 
-    <img id="lightboxImage" src="" alt="">
+        </section> <!-- CLOSES gallery-section -->
 
-    <button class="lightbox-next" id="lightboxNext">&#10095;</button>
 
-    <p class="lightbox-caption" id="lightboxCaption"></p>
+        <!-- LIGHTBOX -->
+        <div class="lightbox" id="galleryLightbox">
+            <button class="lightbox-close" id="lightboxClose">&times;</button>
+            <button class="lightbox-prev" id="lightboxPrev">&#10094;</button>
+
+            <img id="lightboxImage" src="" alt="">
+
+            <button class="lightbox-next" id="lightboxNext">&#10095;</button>
+
+            <p class="lightbox-caption" id="lightboxCaption"></p>
+        </div>
+
+
+       
+<!-- LOCATION SECTION -->
+<section class="location-section" id="location">
+
+  <h2>Come Visit Us!</h2>
+
+<div class="location-divider">
+    <span></span>
+    <i class="fa-solid fa-droplet"></i>
+    <span></span>
 </div>
+ 
 
+    <div class="location-content">
 
-        </section>
+        <!-- LOCATION INFORMATION -->
+        <div class="location-info">
+            <h3>Find Us</h3>
 
-        <!-- Location Section -->
-        <section class="location-section">
-
-            <h2>Find Our Location!</h2>
-
-            <div class="map-container">
-
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.0129083846828!2d-118.35686532596455!3d33.9676365221959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b705ba2ed33b%3A0xd7f4a0a7fe8e82bf!2sLUV%20Car%20Wash%20-%20N%20La%20Brea%20Ave!5e1!3m2!1sen!2sus!4v1793302216908!5m2!1sen!2sus" 
-               width="600" height="450" style="border:0;" allowfullscreen="" 
-               loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-
+            <div class="location-detail">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>320 N La Brea Ave,<br>Inglewood, CA 90302</p>
             </div>
 
-        </section>
+            <div class="location-detail">
+                <i class="fa-solid fa-car"></i>
+                <p>Conveniently located in Inglewood.</p>
+            </div>
 
-    </main>
+            <a class="directions-button"
+               href="https://www.google.com/maps/search/?api=1&query=320+N+La+Brea+Ave+Inglewood+CA+90302"
+               target="_blank">
+                <i class="fa-solid fa-diamond-turn-right"></i>
+                Get Directions
+            </a>
+        </div>
+
+        <!-- GOOGLE MAP -->
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.0129083846828!2d-118.35686532596455!3d33.9676365221959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b705ba2ed33b%3A0xd7f4a0a7fe8e82bf!2sLUV%20Car%20Wash%20-%20N%20La%20Brea%20Ave!5e1!3m2!1sen!2sus!4v1793302216908!5m2!1sen!2sus"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+        </div>
+
+    </div>
+</section>
+
+
+</main>
+
 
     <!-- FOOTER -->
 <footer class="footer">

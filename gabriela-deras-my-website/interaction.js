@@ -1,4 +1,27 @@
 
+/* HERO IMAGE SCROLL ZOOM */
+
+const heroImage = document.querySelector(".hero img");
+
+if (heroImage) {
+    window.addEventListener("scroll", () => {
+        const hero = document.querySelector(".hero");
+        const heroPosition = hero.getBoundingClientRect();
+
+        const progress = Math.max(
+            0,
+            Math.min(1, (window.innerHeight - heroPosition.top) /
+            (window.innerHeight + heroPosition.height))
+        );
+
+        const zoom = 1 + (progress * 0.12);
+        const move = progress * -20;
+
+        heroImage.style.transform =
+            `scale(${zoom}) translateY(${move}px)`;
+    });
+}
+
 /* GABY'S CAR WASH - WEBSITE INTERACTIONS */
 
 /* 1. SPECIAL OFFER BUTTON */
